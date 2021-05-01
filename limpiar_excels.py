@@ -14,15 +14,15 @@ tuplas_brent = list(records)
 print("Tamaño tuplas_brent",len(tuplas_brent), "\n")
 
 fechas_brent = []
-# for tp in tuplas_brent:
-#     fechas_brent.append(tp[0])
+for tp in tuplas_brent:
+    fechas_brent.append(tp[0])
 
-# tuplas_copy_cop = tuplas_cop
-#
-# for tp in tuplas_copy_cop:
-#     if tp[0] not in fechas_brent:
-#         tuplas_cop.remove(tp)
-#
+tuplas_copy_cop = tuplas_cop
+
+for tp in tuplas_copy_cop:
+    if tp[0] not in fechas_brent:
+        tuplas_cop.remove(tp)
+
 
 print("Tamaño cop nuevo" ,len(tuplas_cop))
 
