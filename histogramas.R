@@ -37,6 +37,9 @@ hist(coffee %>% pull (Close), main ="Histograma precios del Caf�", xlab = "Pre
 #############################################################################################################################
 #Diagrama de Caja
 
+preciosdol = boxplot(COPUSD)
+coffeee = boxplot(Coffe)
+brentt = boxplot(brent)
 
 
 #############################################################################################################################
