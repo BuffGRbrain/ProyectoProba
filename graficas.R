@@ -39,9 +39,9 @@ COPUSD <- COPUSD_prices %>% pull (Close)
 Coffee <- coffee %>% pull (Close)
 brent <- brent %>% pull (Close)
 
-preciosdol = boxplot(COPUSD, col = "darkgreen")
-coffeee = boxplot(Coffee, col = 623)
-brentt = boxplot(brent, col = "darkgrey")
+preciosdol = boxplot(main = 'Precios Dolar', xlab = '', ylab = 'Precio de Cierre'  , COPUSD$Close, col = "darkgreen", horizontal = TRUE)
+coffeee = boxplot(Coffee$Close,main = 'Precios Café', xlab = '', ylab = 'Precio de Cierre', col = 623)
+brentt = boxplot(brent$Close,main = 'Precios Brent', xlab = '', ylab = 'Precio de Cierre', col="darkgrey")
 
 
 #############################################################################################################################
