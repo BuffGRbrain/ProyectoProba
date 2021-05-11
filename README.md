@@ -1,4 +1,4 @@
-READ ME
+Proyecto Proba
 -----------------------------------------------------------------------------------------------------
 Es un repositorio creado por Rafael Cabrera, Guillermo Ribero y Camilo Silva para el proyecto de la materia Probabildad y estadística 1.
 
