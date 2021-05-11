@@ -28,9 +28,9 @@ View(Coffee)
 #Es necesario instalar install.packages("dplyr", dependencies = T)
 
 library("dplyr")
-hist(COPUSD_prices %>% pull (Close), main ="Histograma precios del dolar", xlab = "Precio de cierre", ylab = "Frecuencia",col = "darkgreen")
-hist(brent %>% pull (Close), main ="Histograma precios del petroleo Brent", xlab = "Precio de cierre (en dolares)", ylab = "Frecuencia",col = "darkgrey")
-hist(Coffee %>% pull (Close), main ="Histograma precios del Cafe", xlab = "Precio de cierre (en dolares)", ylab = "Frecuencia",col = 623)
+hist(COPUSD_prices %>% pull (Close), main ="Histograma precios del dolar", xlab = "Precio de cierre", ylab = "Frecuencia",col = "darkgreen", breaks=5)
+hist(brent %>% pull (Close), main ="Histograma precios del petroleo Brent", xlab = "Precio de cierre (en dolares)", ylab = "Frecuencia",col = "darkgrey", breaks=5)
+hist(Coffee %>% pull (Close), main ="Histograma precios del Cafe", xlab = "Precio de cierre (en dolares)", ylab = "Frecuencia",col = 623, breaks=5)
 
 
 #############################################################################################################################
