@@ -51,8 +51,8 @@ Coffee <- coffee # %>% (Close)
 brent <- brent # %>% (Close)
 
 preciosdol = plot(COPUSD, type="l", main="Precios del dolar", xlab = "Fecha", ylab = "Precio de cierre", col="darkgreen")
-coffeee = plot(Coffee, type="l", main="Precios del cafe", xlab = "Fecha", ylab = "Precio de cierre", col="darkgrey")
-brentt = plot(brent, type="l", main="Precios del petroleo", xlab = "Fecha", ylab = "Precio de cierre", col=623)
+coffeee = plot(Coffee, type="l", main="Precios del cafe", xlab = "Fecha", ylab = "Precio de cierre", col=623)
+brentt = plot(brent, type="l", main="Precios del petroleo", xlab = "Fecha", ylab = "Precio de cierre", col="darkgrey")
 
 
 #############################################################################################################################
