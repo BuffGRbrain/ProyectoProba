@@ -6,7 +6,7 @@ y = COPUSD_ds$Close
 mod_brent = lm(y~x)
 summary(mod_brent)
 
-plot(x,y, xlab = "Precio Brent", ylab = "Precio Dolar")
+plot(x,y, xlab = "Precio Brent (USD)", ylab = "Precio Dolar (COP)")
 
 abline(mod_brent, col = 2, lwd = 3)
 
@@ -36,7 +36,7 @@ Sxx = sum((x-xb)^2)
 Sxy = sum((x-xb)*(y-yb))
 Syy = sum((y-yb)^2)
 
-plot(x,y,main = 'ScatterPlot' )
+
 
 B1 = Sxy/Sxx # pendiente de la recta
 B0 = yb - B1*xb #ptos de corte con observaciones
@@ -78,7 +78,7 @@ y_Coffee = COPUSD_ds$Close
 mod_coffee = lm(y_Coffee~x_Coffee)
 summary(mod_coffee)
 
-plot(x_Coffee,y_Coffee, xlab = "Precio Coffee", ylab = "Precio Dolar")
+plot(x_Coffee,y_Coffee, xlab = "Precio Coffee (USD)", ylab = "Precio Dolar (COP)")
 
 abline(mod_coffee, col = 2, lwd = 3)
 
@@ -105,10 +105,8 @@ x_Coffeeb = mean(x_Coffee)
 y_Coffeeb= mean(y_Coffee)
 
 Sxx = sum((x_Coffee-x_Coffeeb)^2)
-Sxy = sum((x_Coffee-x_Coffeeb)*(y_Coffe-y_Coffeeb))
+Sxy = sum((x_Coffee-x_Coffeeb)*(y_Coffee-y_Coffeeb))
 Syy = sum((y_Coffee-y_Coffeeb)^2)
-
-plot(x_Coffee,y_Coffee,main = 'ScatterPlot' )
 
 B1 = Sxy/Sxx # pendiente de la recta
 B0 = y_Coffeeb - B1*x_Coffeeb #ptos de corte con observaciones
