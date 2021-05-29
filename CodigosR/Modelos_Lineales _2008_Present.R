@@ -88,7 +88,3 @@ predict(mod_coffee, x_n, level=0.9, interval="prediction")
 #IP = [2476.867, 4220.777]
 
 ############################################################################################################################################################################################################################
-#en caso de querer hacerlo partiendo a partir de cierto valor
-#BRENT_COPUSD=merge(BRENT_ds, COPUSD_ds, by="Date" ) #Union del modelo para ver como se comporta por intervalos
-#BRENT_COPUSD=merge(BRENT_ds, COPUSD_ds, by="Date")
-#BRENT_COPUSD<-BRENT_COPUSD[BRENT_COPUSD$Close_BRENT > 79]
